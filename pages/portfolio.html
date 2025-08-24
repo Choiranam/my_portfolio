@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Choirul'anam's projects - Web and mobile developer portfolio" />
+    <meta name="keywords" content="web developer, mobile developer, portfolio, projects" />
+    <meta name="author" content="Choirul'anam" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body class="dark-mode">
+    <header>
+        <nav class="navbar">
+            <div class="logo">Choirul'anam</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="theme-toggle"><i class="fas fa-sun"></i></button>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <main>
+            <section id="portfolio" class="portfolio">
+                <div class="project-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Website</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile App</button>
+                </div>
+                <div class="portfolio-grid" data-aos="fade-up">
+                    <div class="portfolio-item" data-modal="modal1" data-type="web">
+                        <img src="/assets/portfolio/web_pernikahan.png" alt="Web Pernikahan" />
+                        <div class="overlay">
+                            <h3>Web Pernikahan Kaka dan Zaskia</h3>
+                            <p>Tech: HTML, CSS, JavaScript</p>
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-modal="modal2" data-type="mobile">
+                        <img src="/assets/portfolio/apk_pesanbuku.png" alt="Mobile App" />
+                        <div class="overlay">
+                            <h3>Mobile App</h3>
+                            <p>Tech: Flutter, Firebase</p>
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-modal="modal3" data-type="web">
+                        <img src="../assets/images/project3.jpg" alt="UI/UX Design" />
+                        <div class="overlay">
+                            <h3>UI/UX Design</h3>
+                            <p>Tech: Figma, Adobe XD</p>
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-modal="modal4" data-type="web">
+                        <img src="../assets/images/project4.jpg" alt="Web Project 2" />
+                        <div class="overlay">
+                            <h3>Web Project 2</h3>
+                            <p>Tech: React, Node.js</p>
+                            <a href="#" class="btn">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Web Pernikahan Kaka dan Zaskia</h3>
+                    <img src="/assets/portfolio/web_pernikahan.png" alt="Web Pernikahan" />
+                    <p>Website undangan pernikahan digital yang elegan dan responsif.</p>
+                    <div class="tech-icons">
+                        <iconify-icon icon="devicon:html5" width="40" height="40"></iconify-icon>
+                        <iconify-icon icon="devicon:css3" width="40" height="40"></iconify-icon>
+                        <iconify-icon icon="logos:javascript" width="40" height="40"></iconify-icon>
+                    </div>
+                    <a href="https://udangan-nikah-web.netlify.app/" target="_blank" class="btn">Visit Project</a>
+                </div>
+            </div>
+
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Web Pernikahan Kaka dan Zaskia</h3>
+                    <img src="/assets/portfolio/web_pernikahan.png" alt="Web Pernikahan" />
+                    <p>Website undangan pernikahan digital yang elegan dan responsif.</p>
+                    <div class="tech-icons">
+                        <iconify-icon icon="devicon:html5" width="40" height="40"></iconify-icon>
+                        <iconify-icon icon="devicon:css3" width="40" height="40"></iconify-icon>
+                        <iconify-icon icon="logos:javascript" width="40" height="40"></iconify-icon>
+                    </div>
+                    <a href="https://udangan-nikah-web.netlify.app/" target="_blank" class="btn">Visit Project</a>
+                </div>
+            </div>
+
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>UI/UX Design</h3>
+                    <img src="../assets/images/project3.jpg" alt="UI/UX Design" />
+                    <p>Desain UI/UX untuk aplikasi belanja online, fokus pada user journey dan layout modern.</p>
+                    <div class="tech-icons">
+                        <img src="../assets/icons/figma.png" alt="Figma" />
+                        <img src="../assets/icons/adobe-xd.png" alt="Adobe XD" />
+                    </div>
+                    <a href="#" class="btn">Visit Project</a>
+                </div>
+            </div>
+
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Web Project 2</h3>
+                    <img src="../assets/images/project4.jpg" alt="Web Project 2" />
+                    <p>Aplikasi web dinamis dengan autentikasi dan REST API.</p>
+                    <div class="tech-icons">
+                        <img src="../assets/icons/react.png" alt="React" />
+                        <img src="../assets/icons/nodejs.png" alt="Node.js" />
+                    </div>
+                    <a href="#" class="btn">Visit Project</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Choirul'anam. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <button id="back-to-top" class="btn">↑</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
